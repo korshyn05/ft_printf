@@ -6,7 +6,7 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 02:32:28 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 14:01:51 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/29 16:49:11 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char			*for_percent(t_flags flag);
 char			*right_width(char *string, char ch, size_t counter);
 char			*for_i_or_d(t_flags flag, t_parameters *prmtrs);
-char			*ft_itoa(int n);
+char			*ft_itoa(long n);
 char			*precision_for_integer(char *ptr, t_flags flag, int sign);
 char			*without_precision(char *ptr, t_flags flag, int sign);
 char			*for_p(t_flags flag, t_parameters *prmtrs);

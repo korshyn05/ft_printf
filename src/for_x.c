@@ -6,7 +6,7 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 07:33:41 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 13:32:08 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/29 16:52:39 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char		*precision_for_x(t_flags flag, char *ptr)
 			return (NULL);
 	}
 	if (flag.width)
-		if (!(ptr = if_width(ptr, ' ', flag.precsn)))
+		if (!(ptr = if_width(ptr, ' ', flag.width)))
 			return (NULL);
 	if (flag.minus)
 		if (!(ptr = align_left(ptr)))

@@ -6,7 +6,7 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 05:35:54 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 15:47:20 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/29 19:17:02 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,12 +79,13 @@ char	*which_flag(t_flags flag, t_parameters *prmtrs)
 	char *ptr;
 
 	prmtrs->line = prmtrs->format[prmtrs->count];
+	if (prmtrs->format[prmtrs->count] == 'd' ||
+	prmtrs->format[prmtrs->count] == 'i')
+		return (for_i_or_d(flag, prmtrs));
 	if (prmtrs->format[prmtrs->count] == 'c')
 		return (for_c(flag, prmtrs));
 	if (prmtrs->format[prmtrs->count] == 's')
 		return (for_s(flag, prmtrs));
-	if (prmtrs->format[prmtrs->count] == '%')
-		return (for_percent(flag));
 	if (prmtrs->format[prmtrs->count] == 'x')
 		return (small_x(flag, prmtrs));
 	if (prmtrs->format[prmtrs->count] == 'X')
@@ -93,12 +94,11 @@ char	*which_flag(t_flags flag, t_parameters *prmtrs)
 			return (NULL);
 		return (big_x(ptr));
 	}
-	if (prmtrs->format[prmtrs->count] == 'd' ||
-		prmtrs->format[prmtrs->count] == 'i')
-		return (for_i_or_d(flag, prmtrs));
 	if (prmtrs->format[prmtrs->count] == 'u')
 		return (for_u(flag, prmtrs));
 	if (prmtrs->format[prmtrs->count] == 'p')
 		return (for_p(flag, prmtrs));
+	if (prmtrs->format[prmtrs->count] == '%')
+		return (for_percent(flag));
 	return (NULL);
 }
