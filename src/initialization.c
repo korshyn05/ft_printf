@@ -6,7 +6,7 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 05:36:58 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 07:19:58 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/29 15:46:32 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,22 +34,22 @@ void	init_parameter(t_parameters *prmtrs)
 	prmtrs->backward_zero = 0;
 }
 
-int			set_flag(t_flags *flag, char fl, t_parameters *prmtrs)
+int			set_flag(t_flags *flag, char ch, t_parameters *prmtrs)
 {
-	if (fl == '.')
+	if (ch == '.')
 		flag->dot = 1;
-	if (fl == '0')
+	if (ch == '0')
 		flag->zero = 1;
-	if (fl == '-')
+	if (ch == '-')
 		flag->minus = 1;
-	if (fl >= '1' && fl <= '9')
+	if (ch >= '1' && ch <= '9')
 	{
 		if (flag->dot)
 			flag->precsn = ft_atoi(&(prmtrs->format[prmtrs->count]), prmtrs);
 		else
 			flag->width = ft_atoi(&(prmtrs->format[prmtrs->count]), prmtrs);
 	}
-	if (fl == '*')
+	if (ch == '*')
 	{
 		if (flag->dot)
 			flag->precsn = (int)va_arg(prmtrs->ap, int);
