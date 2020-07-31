@@ -6,12 +6,11 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 02:32:45 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 16:13:57 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 01:55:10 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/ft_printf.h"
-
 
 int		ft_printf(const char *frmt, ...)
 {

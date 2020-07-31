@@ -6,7 +6,7 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 07:54:00 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 16:49:20 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 15:25:46 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char			*for_i_or_d(t_flags flag, t_parameters *prmtrs)
 	if (p < 0)
 	{
 		sign = -1;
-		p = -p; //fix
+		p = -p;
 	}
 	ptr = ft_itoa(p);
 	if (flag.dot)

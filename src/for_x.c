@@ -6,13 +6,13 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 07:33:41 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 16:52:39 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 15:31:07 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-char			*small_x(t_flags flag, t_parameters *prmtrs)
+char		*small_x(t_flags flag, t_parameters *prmtrs)
 {
 	char			*ptr;
 	unsigned int	p;
@@ -28,7 +28,6 @@ char			*small_x(t_flags flag, t_parameters *prmtrs)
 			return (NULL);
 	return (ptr);
 }
-
 
 char		*precision_for_x(t_flags flag, char *ptr)
 {
@@ -61,7 +60,7 @@ char		*x_without_precision(t_flags flag, char *ptr)
 	return (ptr);
 }
 
-char			*itoa_for_x(unsigned long long number)
+char		*itoa_for_x(unsigned long long number)
 {
 	char	str[20];
 	size_t	i;
@@ -89,11 +88,11 @@ char			*itoa_for_x(unsigned long long number)
 	return (string);
 }
 
-char			*big_x(char *string)
+char		*big_x(char *string)
 {
 	int i;
 
-	i = 0; //fix
+	i = 0;
 	while (string[i] != '\0')
 	{
 		string[i] = (char)ft_toupper(string[i]);

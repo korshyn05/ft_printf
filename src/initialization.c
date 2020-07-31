@@ -6,7 +6,7 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 05:36:58 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 15:46:32 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 15:31:30 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	init_params(t_parameters *param, const char *frmt)
 	param->format = frmt;
 }
 
-void		init_flag(t_flags *flag)
+void	init_flag(t_flags *flag)
 {
 	flag->dot = 0;
 	flag->minus = 0;
@@ -34,7 +34,7 @@ void	init_parameter(t_parameters *prmtrs)
 	prmtrs->backward_zero = 0;
 }
 
-int			set_flag(t_flags *flag, char ch, t_parameters *prmtrs)
+int		set_flag(t_flags *flag, char ch, t_parameters *prmtrs)
 {
 	if (ch == '.')
 		flag->dot = 1;

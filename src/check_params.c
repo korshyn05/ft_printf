@@ -6,7 +6,7 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 05:35:54 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 19:17:02 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 15:29:41 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		check_params(t_parameters *prmtrs)
 	init_parameter(prmtrs);
 	if (check_string(*prmtrs))
 		return (1);
-	while (prmtrs->format[++(prmtrs->count)] != '\0' &&  //| TODO: Не забыть
+	while (prmtrs->format[++(prmtrs->count)] != '\0' &&
 		is_flag_or_digit(prmtrs->format[prmtrs->count]))
 		set_flag(&flag, prmtrs->format[prmtrs->count], prmtrs);
 	simplification_flags(&flag);
@@ -67,7 +67,7 @@ int		is_type(int type)
 	return (0);
 }
 
-int			is_flag_or_digit(int c)
+int		is_flag_or_digit(int c)
 {
 	if ((c == '.') || (c == '-') || (c == '*') || (c >= '0' && c <= '9'))
 		return (1);

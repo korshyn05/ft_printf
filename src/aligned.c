@@ -6,7 +6,7 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 06:09:53 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 16:07:42 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 01:58:21 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*if_width(char *string, char ch, size_t counter)
 	if (!(str = malloc((counter + 1) * sizeof(char))))
 		return (NULL);
 	while (i++ < counter)
-		str[i - 1] = ch; //fix
+		str[i - 1] = ch;
 	str[counter] = '\0';
 	i = ft_strlen(string);
 	while (i-- > 0)
@@ -39,13 +39,13 @@ char	*align_left(char *ptr)
 
 	i = 0;
 	counter = 0;
-	while (ptr[i] != '\0' && ptr[i] == ' ') //fix
+	while (ptr[i] != '\0' && ptr[i] == ' ')
 		i++;
 	if (ptr[i] == '\0' || !i)
 		return (ptr);
-	while (ptr[i] != '\0')		//fix
+	while (ptr[i] != '\0')
 		ptr[counter++] = ptr[i++];
-	while ((ptr[counter]) != '\0')  //fix
+	while ((ptr[counter]) != '\0')
 		ptr[counter++] = ' ';
 	return (ptr);
 }

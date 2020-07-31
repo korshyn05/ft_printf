@@ -6,13 +6,13 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 13:03:34 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 13:44:01 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 15:29:21 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-char			*for_u(t_flags flag, t_parameters *prmtrs)
+char	*for_u(t_flags flag, t_parameters *prmtrs)
 {
 	char			*ptr;
 	unsigned int	p;
@@ -40,8 +40,7 @@ char			*for_u(t_flags flag, t_parameters *prmtrs)
 	return (ptr);
 }
 
-
-char		*itoa_for_u(unsigned long long number)
+char	*itoa_for_u(unsigned long long number)
 {
 	int		length;
 	char	str[11];
@@ -68,7 +67,7 @@ char		*itoa_for_u(unsigned long long number)
 	return (string);
 }
 
-char		*precision_u(t_flags flag, char *ptr)
+char	*precision_u(t_flags flag, char *ptr)
 {
 	if (flag.precsn == 0 && ptr[0] == '0')
 		ptr[0] = '\0';

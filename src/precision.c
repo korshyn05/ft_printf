@@ -6,7 +6,7 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 07:15:59 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 14:01:09 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 15:27:34 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char		*for_precision(char *s, int count)
 	return (str);
 }
 
-char	*sign_func(char *string, int sign)
+char		*sign_func(char *string, int sign)
 {
 	char *str;
 

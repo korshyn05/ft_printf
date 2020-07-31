@@ -6,7 +6,7 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 02:32:28 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 16:49:11 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 15:34:28 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,13 +76,13 @@ char			*small_x(t_flags flag, t_parameters *prmtrs);
 char			*itoa_for_x(unsigned long long number);
 char			*big_x(char *string);
 char			*for_u(t_flags flag, t_parameters *prmtrs);
-char		*precision_for_x(t_flags flag, char *ptr);
-char		*x_without_precision(t_flags flag, char *ptr);
-int		ft_toupper(int c);
-char		*itoa_for_u(unsigned long long number);
-char		*precision_u(t_flags flag, char *ptr);
-char		*add_0x(char *string);
-char		*precision_for_p(t_flags flag, char *ptr);
-char		*p_without_precision(t_flags flag, char *ptr);
+char			*precision_for_x(t_flags flag, char *ptr);
+char			*x_without_precision(t_flags flag, char *ptr);
+int				ft_toupper(int c);
+char			*itoa_for_u(unsigned long long number);
+char			*precision_u(t_flags flag, char *ptr);
+char			*add_0x(char *string);
+char			*precision_for_p(t_flags flag, char *ptr);
+char			*p_without_precision(t_flags flag, char *ptr);
 
 #endif

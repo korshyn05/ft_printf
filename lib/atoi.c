@@ -6,7 +6,7 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 05:29:42 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 16:48:23 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 15:25:22 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ size_t		length_atoi(int n)
 	return (i);
 }
 
-int		ft_atoi(const char *str, t_parameters *param)
+int			ft_atoi(const char *str, t_parameters *param)
 {
 	int				i;
 	int				znak;
@@ -55,7 +55,7 @@ int		ft_atoi(const char *str, t_parameters *param)
 	return ((int)iota * znak);
 }
 
-static char		*negative(char *string)
+static char	*negative(char *string)
 {
 	int		length;
 	int		i;
@@ -71,7 +71,7 @@ static char		*negative(char *string)
 	return (line);
 }
 
-char			*ft_itoa(long n)
+char		*ft_itoa(long n)
 {
 	char	str[11];
 	int		znak;

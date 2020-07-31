@@ -6,13 +6,13 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 05:57:42 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 15:49:11 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 15:27:06 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-void		simplification_flags(t_flags *flag)
+void	simplification_flags(t_flags *flag)
 {
 	if (flag->precsn < 0)
 		flag->dot = 0;
@@ -22,5 +22,5 @@ void		simplification_flags(t_flags *flag)
 		flag->width *= -1;
 	}
 	if (flag->minus)
-	flag->zero = 0;
+		flag->zero = 0;
 }

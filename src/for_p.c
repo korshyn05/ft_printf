@@ -6,14 +6,13 @@
 /*   By: tludwig <tludwig@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/29 13:10:53 by tludwig           #+#    #+#             */
-/*   Updated: 2020/07/29 13:40:49 by tludwig          ###   ########.fr       */
+/*   Updated: 2020/07/31 15:31:48 by tludwig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-
-char			*for_p(t_flags flag, t_parameters *prmtrs)
+char		*for_p(t_flags flag, t_parameters *prmtrs)
 {
 	char	*ptr;
 	void	*p;
